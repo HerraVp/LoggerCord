@@ -1,15 +1,7 @@
-import discord
-from discord.ext import commands
 from config.config import *
 import os
 import sys
 import datetime
-import requests
-import asyncio
-from colorama import Fore
-
-client = discord.Client()
-
 
 if os.name == "nt":
     os.system("cls")
@@ -42,11 +34,17 @@ if "discordselfbot" in sys.modules:
 
 try:
     import discord
+    from discord.ext import commands
+    import requests
+    import asyncio
+    from colorama import Fore
 except ModuleNotFoundError:
     install("discord.py-self")
     install("colorama")
     install("asyncio")
     install("requests")
+
+client = discord.Client()
 
 
 version = "v1.0"
@@ -60,14 +58,13 @@ print(
 )
 
 print(Fore.WHITE + "By Vp \n")
-print(f"{name} Logging messages: ")        
-
+print(f"{name} Logging messages: ")
 
 
 @client.event
 async def on_message(message):
     await asyncio.sleep(2)
-    
+
     image = "/image"
     now = datetime.datetime.now()
     now = now.strftime("%d-%m-%y %H:%M:%S")
