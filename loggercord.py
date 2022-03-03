@@ -10,6 +10,7 @@ from colorama import Fore
 
 client = discord.Client()
 
+
 if os.name == "nt":
     os.system("cls")
     os.system("title LoggerCord")

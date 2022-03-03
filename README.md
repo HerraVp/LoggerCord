@@ -5,6 +5,8 @@ Discord message logging tool made using python.
 
 Get your discord token and paste it in config/config.py
 
+If u dont know how to get ur token. Google it.
+
 LoggerCord should do all the installations automatically, but if it doesn't happen. Then use these commands below:
 
 
