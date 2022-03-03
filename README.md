@@ -5,7 +5,7 @@ Discord message logging tool made using python.
 
 Get your discord token and paste it in config/config.py
 
-LogCord should do all the installations automatically, but if it doesn't happen. Then use these commands below:
+LoggerCord should do all the installations automatically, but if it doesn't happen. Then use these commands below:
 
 
 1. `pip uninstall discord.py`
